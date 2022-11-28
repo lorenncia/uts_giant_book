@@ -17,7 +17,7 @@ class Controller extends BaseController
 
     public function __construct()
     {
-        $this->categories = Category::orderBy('name')->get();
+        $this->categories = Category::orderBy('name')->paginate(4);
         View::share('categories', $this->categories);
     }
 

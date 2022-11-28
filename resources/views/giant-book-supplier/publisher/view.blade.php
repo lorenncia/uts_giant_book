@@ -29,5 +29,6 @@
                 </div>
             @endforeach
         </div>
+        {{ $publishers->links() }}
     </div>
 @endsection
