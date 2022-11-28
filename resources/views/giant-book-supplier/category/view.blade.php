@@ -29,6 +29,6 @@
                 </div>
             @endforeach
         </div>
-        {{ $categories->links() }}
+        {{ $bookCategories->links() }}
     </div>
 @endsection
